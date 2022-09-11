@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../src/styles/reset.css">
+        <link rel="stylesheet" href="../src/styles/styles.css">
+    </head>
+    <body>
+        <div id="content">
+            <div class="header">
+                <div id="name">Totally Real Restaurant</div>
+                <div id="tab-section">
+                    <div class="tab selected" id="home-tab" onclick="clickTab(this)">Home</div>
+                    <div class="tab" id="menu-tab" onclick="clickTab(this)">Menu</div>
+                    <div class="tab" id="contact-tab" onclick="clickTab(this)">Contact</div>
+                </div>
+            </div>
+            <div id="page"></div>
+        </div>
+        <!-- <script src="main.js"></script> -->
+        <script>
+        function clickTab(ele){
+            const selectedElement = document.getElementsByClassName('selected');
+            selectedElement[0].classList.toggle('selected');
+
+            const newId = ele.id;
+            const element = document.getElementById(newId);
+            element.classList.toggle('selected');
+        }
+        </script>
+    </body>
+</html>

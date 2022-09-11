@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../assets/fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --headerheight: 25vh;
+    --headerfont: 'Lobster';
+}
+
+
+body {
+    background-image: url('../assets/images/restaurant-table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    height: 100vh;
+}
+
+#content {
+    display: block;
+    backdrop-filter: blur(10px);
+
+}
+
+.header {
+    height: var(--headerheight);
+    width: 100vw;
+    display: grid;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    font-family: var(--headerfont);
+    color: white;
+}
+
+#name {
+    margin-top: 10vh;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+#tab-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+    gap: 50px;
+}
+
+.tab {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+#page {
+    height: calc(100vh - var(--headerheight));
+    width: 100vw;
+}
+
+.selected {
+    border-bottom: 2px solid white;
+}
