@@ -9,19 +9,15 @@
         <link rel="stylesheet" href="../src/styles/styles.css">
     </head>
     <body>
-        <div id="content">
+        <div id="page">
             <div class="header">
                 <div id="name">Totally Real Restaurant</div>
-                <div id="tab-section">
-                    <div class="tab selected" id="home-tab" onclick="clickTab(this)">Home</div>
-                    <div class="tab" id="menu-tab" onclick="clickTab(this)">Menu</div>
-                    <div class="tab" id="contact-tab" onclick="clickTab(this)">Contact</div>
-                </div>
+                <div id="navbar"></div>
             </div>
-            <div id="page"></div>
+            <div id="content"></div>
         </div>
-        <!-- <script src="main.js"></script> -->
-        <script>
+        <script src="main.js"></script>
+        <!-- <script>
         function clickTab(ele){
             const selectedElement = document.getElementsByClassName('selected');
             selectedElement[0].classList.toggle('selected');
@@ -30,6 +26,6 @@
             const element = document.getElementById(newId);
             element.classList.toggle('selected');
         }
-        </script>
+        </script> -->
     </body>
 </html>
