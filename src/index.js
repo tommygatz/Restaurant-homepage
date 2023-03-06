@@ -1,12 +1,6 @@
 import './styles/styles.css';
-import createTab from './modules/createTab';
+import createHeader from './modules/createHeader';
 
-const nav = document.getElementById('navbar');
-
-const homeBtn = createTab('home', 'Home');
-const menuBtn = createTab('menu', 'Menu');
-const contactBtn = createTab('contact', 'Contact');
-
-nav.appendChild(homeBtn);
-nav.appendChild(menuBtn);
-nav.appendChild(contactBtn);
+const page = document.getElementById('page');
+const header = createHeader('header', 'Totally Real Restaurant 2');
+page.appendChild(header);
