@@ -10,7 +10,6 @@
     --headerfont: 'Lobster';
 }
 
-
 body {
     background-image: url('../assets/images/restaurant-table.jpg');
     background-repeat: no-repeat;
@@ -23,24 +22,23 @@ body {
     height: 100vh;
 }
 
-#page {
+#content {
     display: block;
     backdrop-filter: blur(10px);
-
 }
 
 .header {
     height: var(--headerheight);
     width: 100vw;
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-content: space-between;
-    justify-items: center;
+    align-items: center;
     font-family: var(--headerfont);
     color: white;
 }
 
-#name {
+#header-title {
     margin-top: 10vh;
     font-size: 3rem;
     text-shadow: 2px 2px 2px black;
@@ -50,7 +48,6 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 1.5rem;
-
     text-shadow: 1px 1px 1px black;
     gap: 50px;
 }
@@ -79,4 +76,17 @@ button {
 
 .selected {
     border-bottom: 2px solid white;
+}
+
+#main {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
 }
