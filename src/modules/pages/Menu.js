@@ -5,7 +5,7 @@ function createMenu(){
 };
 
 function loadMenu(){
-    const main = document.getElementById('main');
+    const main = document.getElementById('main-content');
     main.textContent = '';
     main.appendChild(createMenu());
 };

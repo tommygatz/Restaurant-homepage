@@ -1,6 +1,7 @@
 function createFooter(){
     const footer = document.createElement('div');
-    footer.setAttribute('id', 'footer');
+    footer.classList.add('footer');
+    footer.textContent = 'FOOTER';
     return footer;
 };
 

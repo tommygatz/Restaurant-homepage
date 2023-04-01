@@ -5,7 +5,7 @@ function createHome(){
 };
 
 function loadHome(){
-    const main = document.getElementById('main');
+    const main = document.getElementById('main-content');
     main.textContent = '';
     main.appendChild(createHome());
 };

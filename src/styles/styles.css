@@ -12,54 +12,75 @@
 
 body {
     background-image: url('../assets/images/restaurant-table.jpg');
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    margin: auto;
+    margin: 0;
     height: 100vh;
 }
 
 #content {
-    display: block;
-    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-title, #navbar, #main-content, .footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .header {
-    height: var(--headerheight);
+    order: 1;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: auto;
     width: 100vw;
-    display: flex;
     flex-direction: column;
-    align-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
+    justify-content: end;
     font-family: var(--headerfont);
     color: white;
+    backdrop-filter: brightness(.6) blur(10px);
+    border-bottom: 1px solid grey;
 }
 
 #header-title {
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: 3rem;
     text-shadow: 2px 2px 2px black;
 }
 
 #navbar {
-    display: flex;
-    flex-direction: row;
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px black;
     gap: 50px;
+    margin-top: 25px;
 }
 
 .tab {
     width: fit-content;
     height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px 20px;
     background: none;
+}
+
+.tab.active {
+    border-style: hidden;
+    border-width: 2px 2px 0px 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -10px 25px -5px black;
 }
 
 button {
@@ -69,24 +90,22 @@ button {
     color: white;
 }
 
-#content {
-    height: calc(100vh - var(--headerheight));
-    width: 100vw;
-}
-
-.selected {
-    border-bottom: 2px solid white;
-}
-
-#main {
-    color: white;
+#main-content {
+    order: 2;
     display: flex;
-    justify-content: center;
+    color: white;
+    overflow-y: auto;
+    height: 60vh;
+    width: 75vw;
+    backdrop-filter: brightness(.6) blur(10px);
+    border: 1px solid grey;
+    border-radius: 50px;
+
 }
 
-#footer {
+.footer {
+    order: 3;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
     height: auto;
+    margin-bottom: 5px;
 }

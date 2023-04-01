@@ -1,9 +1,19 @@
 import './styles/styles.css';
 import './styles/reset.css';
 import createHeader from './modules/header';
-import createMain from './modules/main';
+import createMain from './modules/mainContent';
 import createFooter from './modules/footer';
 import loadHome from './modules/pages/Home';
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13,8 +23,6 @@ function loadContent() {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 };
-
-
 
 loadContent();
 loadHome();

@@ -5,7 +5,7 @@ function createContact(){
 };
 
 function loadContact(){
-    const main = document.getElementById('main');
+    const main = document.getElementById('main-content');
     main.textContent = '';
     main.appendChild(createContact());
 };
