@@ -1,7 +1,8 @@
 function createFooter(){
     const footer = document.createElement('div');
     footer.classList.add('footer');
-    footer.textContent = 'FOOTER';
+    footer.innerHTML = `<p>Page created by</p><a class="ghlink" href="https://github.com/tommygatz" title="Github Link">Tommygatz</a>
+    `;
     return footer;
 };
 

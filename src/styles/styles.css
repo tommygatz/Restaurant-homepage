@@ -4,10 +4,28 @@
     font-weight: 600;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Merriweather-light';
+    src: url('../assets/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-italic';
+    src: url('../assets/fonts/Merriweather/Merriweather-Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.2rem;
+}
 
 :root {
     --headerheight: 25vh;
     --headerfont: 'Lobster';
+    --mainfont: 'Merriweather-italic';
 }
 
 body {
@@ -91,16 +109,38 @@ button {
 }
 
 #main-content {
+    font-family: var(--mainfont);
     order: 2;
     display: flex;
     color: white;
     overflow-y: auto;
-    height: 60vh;
-    width: 75vw;
+    height: 70vh;
+    width: 90vw;
     backdrop-filter: brightness(.6) blur(10px);
     border: 1px solid grey;
     border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    text-align: center;
+}
 
+.menu-item {
+    padding: 15px; 
+    width: 90%;
+}
+
+.menu-item-title {
+    padding-bottom: 5px;
+}
+
+.menu-item-text {
+    font-family: 'Merriweather-light';
+}
+
+.menu-item:hover{
+    box-shadow: 0px 0px 25px -5px black;
 }
 
 .footer {
@@ -108,4 +148,29 @@ button {
     color: white;
     height: auto;
     margin-bottom: 5px;
+}
+
+.footer > p, a {
+    font-family: 'Merriweather-light';
+    font-size: .9rem;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+.footer > a {
+    padding: 0 .25rem 0 .25rem;
+}
+
+a:hover {
+    text-decoration:line-through;
+}
+
+.home > p {
+    /* margin-left: 10px; */
+    padding-top: 20px;
+}
+
+.contact-title {
+    padding-bottom: 20px;
 }

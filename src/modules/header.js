@@ -3,7 +3,7 @@ import loadMenu from './pages/Menu';
 import loadContact from './pages/Contact';
 
 function createHeader() {
-    const title = "Totally Real Restaurant 3";
+    const title = "The Rustic Table";
 
     const header = document.createElement('div');
     header.classList.add('header');
