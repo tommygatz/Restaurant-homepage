@@ -6,6 +6,7 @@ import createFooter from './modules/footer';
 import loadHome from './modules/pages/Home';
 
 
+
 function loadContent() {
     const content = document.getElementById('content');
     content.appendChild(createHeader());
