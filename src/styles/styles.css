@@ -121,14 +121,13 @@ button {
     border-radius: 50px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     padding: 25px;
     text-align: center;
 }
 
 .menu-item {
-    padding: 15px; 
-    width: 90%;
+    padding: 20px; 
 }
 
 .menu-item-title {
@@ -166,11 +165,18 @@ a:hover {
     text-decoration:line-through;
 }
 
+.home, .menu, .contact {
+    height: 90%;
+}
+
 .home > p {
-    /* margin-left: 10px; */
     padding-top: 20px;
 }
 
 .contact-title {
-    padding-bottom: 20px;
+    margin-top: 0px;
+}
+
+.contact > p {
+    padding-top: 20px;
 }

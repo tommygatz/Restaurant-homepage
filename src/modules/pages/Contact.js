@@ -1,5 +1,6 @@
 function createContact(){
     const contact = document.createElement('div');
+    contact.classList.add("contact");
     contact.innerHTML = `<h1 class="contact-title">Contact Us</h1>
     <p>555-555-5555</p>
     <p>contact@TheRusticTable.eat</p>`;

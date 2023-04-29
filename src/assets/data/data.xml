@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+    <item>
+        <name>Grilled Salmon with Lemon Butter Sauce</name>
+        <desc>Freshly grilled salmon served with a tangy lemon butter sauce, and a side of roasted vegetables.</desc>
+    </item>
+
+    <item>
+        <name>Classic Cheeseburger</name>
+        <desc>A juicy beef patty topped with melted cheddar cheese, lettuce, tomato, onion, pickles, and served with crispy french fries.</desc>
+    </item>
+
+    <item>
+        <name>Margherita Pizza</name>
+        <desc>Thin-crust pizza topped with tomato sauce, fresh mozzarella cheese, and basil leaves.</desc>
+    </item>
+
+    <item>
+        <name>Chicken Alfredo Pasta</name>
+        <desc>A creamy pasta dish made with grilled chicken, fettuccine pasta, and tossed in a rich Alfredo sauce.</desc>
+    </item>
+
+    <item>
+        <name>Vegan Buddha Bowl</name>
+        <desc>A healthy and delicious bowl filled with brown rice, roasted sweet potatoes, sautéed kale, chickpeas, and topped with a tahini dressing.</desc>
+    </item>
+</menu>
