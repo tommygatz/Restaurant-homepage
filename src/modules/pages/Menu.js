@@ -8,14 +8,6 @@ for (let x=0; x < menuItems.length; x++) {
     console.log(menuItems[x].desc)
 };
 
-// const menuItems = [
-//     "<h2 class='menu-item-title'>Grilled Salmon with Lemon Butter Sauce</h2><h3 class='menu-item-text'>Freshly grilled salmon served with a tangy lemon butter sauce, and a side of roasted vegetables.</h3>",
-//     "<h2 class='menu-item-title'>Classic Cheeseburger</h2><h3 class='menu-item-text'>A juicy beef patty topped with melted cheddar cheese, lettuce, tomato, onion, pickles, and served with crispy french fries.</h3>",
-//     "<h2 class='menu-item-title'>Margherita Pizza</h2><h3 class='menu-item-text'>Thin-crust pizza topped with tomato sauce, fresh mozzarella cheese, and basil leaves.</h3>",
-//     "<h2 class='menu-item-title'>Chicken Alfredo Pasta</h2><h3 class='menu-item-text'>A creamy pasta dish made with grilled chicken, fettuccine pasta, and tossed in a rich Alfredo sauce.</h3>",
-//     "<h2 class='menu-item-title'>Vegan Buddha Bowl</h2><h3 class='menu-item-text'>A healthy and delicious bowl filled with brown rice, roasted sweet potatoes, sautéed kale, chickpeas, and topped with a tahini dressing.</h3>"
-// ];
-
 function createMenu(){
     const menu = document.createElement("div");
     menu.classList.add("menu");
